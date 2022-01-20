@@ -8,14 +8,15 @@
   }
 body {
     margin: 0;
-    font-family: 'Bitter', serif;
 }
 
 .app {
     text-align: center;
+    
   }
   
   .app-header {
+    font-family: 'Bitter', serif;
     background-color: #282c34;
     min-height: 100vh;
     display: flex;
@@ -25,4 +26,17 @@ body {
     font-size: calc(10px + 2vmin);
     color: white;
     text-align: center;
+  }
+
+  ul {
+
+    list-style: none;
+    width: 50%;
+  }
+  
+  .tasks-item {
+    border: 1px solid #d3d3d30f;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
   }
