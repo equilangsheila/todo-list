@@ -12,15 +12,20 @@ function Task (props){
     );
 }
 
-
 function TaskList (){
+    const taskItemsList = [
+        "Follow me on Facebook",
+        "Follow me on Instagram",
+        "Follow me on Twitter"
+    ];
     return (
         <ul>
-            <Task taskName="Follow me on Facebook"/>
-            <Task taskName="Follow me on Instagram"/>
-            <Task taskName="Follow me on Twitter"/>
+            {taskItemsList.map ((task, index) => {
+                return <Task key={index} taskName={task} />
+
+            })}
               </ul>
-    )
+    );
 }
 
 function App() {
