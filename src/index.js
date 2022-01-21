@@ -3,8 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 
-// My first component
-
 function Task (props){
     console.log(props);
     return (
@@ -19,12 +17,14 @@ function TaskList (){
         "Follow me on Twitter"
     ];
     return (
-        <ul>
-            {taskItemsList.map ((task, index) => {
-                return <Task key={index} taskName={task} />
-
+        <div>
+            <input className="task-input"/>
+                <ul>
+                  {taskItemsList.map ((task, index) => {
+                  return <Task key={index} taskName={task}/>
             })}
               </ul>
+        </div>
     );
 }
 
